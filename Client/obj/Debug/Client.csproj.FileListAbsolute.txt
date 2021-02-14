@@ -1,0 +1,4 @@
+C:\Users\cvass\source\repos\LEOLoadout\build\Client.net.dll
+C:\Users\cvass\source\repos\LEOLoadout\Client\obj\Debug\Client.csprojAssemblyReference.cache
+C:\Users\cvass\source\repos\LEOLoadout\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+C:\Users\cvass\source\repos\LEOLoadout\Client\obj\Debug\Client.net.dll
