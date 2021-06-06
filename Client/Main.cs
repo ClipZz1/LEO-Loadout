@@ -11,14 +11,14 @@ namespace Client
         {
             EventHandlers["onClientResourceStart"] += new Action<string>(OnClientResourceStart);
 
-            API.RegisterCommand("loadout", new Action(LeoLoadout), false);
+            API.RegisterCommand("leoloadout", new Action(LeoLoadout), false);
         }
 
         private void OnClientResourceStart(string resourceName)
         {
             if (GetCurrentResourceName() != resourceName) return;
 
-            Debug.WriteLine($"The resource {resourceName} has been started on the client.");
+            Debug.WriteLine($"The resource {resourceName} has been loaded on the client.");
         }
 
         private void LeoLoadout()
@@ -36,8 +36,8 @@ namespace Client
 
             TriggerEvent("chat:addMessage", new
             {
-                color = new[] {0, 0, 0},
-                args = new[] {"[Server]", $"You have recieved your LEO loadout {Game.Player.Name}."}
+                color = new[] {100, 149, 237},
+                args = new[] {"[Server]", $"You have recieved your LEO loadout {Game.Player.Name}!"}
 
             });
         }
